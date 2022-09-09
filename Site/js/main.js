@@ -1040,7 +1040,7 @@
     //line chart
     var ctx = document.getElementById("mainChart");
     if (ctx) {
-      ctx.height = 500;
+      ctx.height = 700;
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {

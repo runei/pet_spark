@@ -56,4 +56,4 @@ df = df.WithColumn("fib_786", Functions.Lit(fib_786));
 // df.PrintSchema();
 // df.Show();
 
-df.Write().Csv("output_small");
+df.Write().Csv("output_temp");

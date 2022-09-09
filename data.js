@@ -40,12 +40,26 @@ const FIB_5 = 11;
 const FIB_618 = 12;
 const FIB_786 = 13;
 
+var config = $.ajax({
+    type: "GET",
+    url: "../config.txt",
+    async: false
+});
+
+var path = "";
+// console.log(config.responseText.trim().localeCompare("BTCUSDT.csv"));
+if (config.responseText.trim().localeCompare("BTCUSDT.csv") == 0) {
+    path = "../output/part-00000-31490ed3-6fa5-4385-b929-a164606dcfad-c000.csv"
+} else if (config.responseText.trim().localeCompare("BTCUSDT_huge.csv") == 0) {
+    path = "../output_huge/part-00000-21a8edbf-da18-4dd0-be53-d8b87269f107-c000.csv"
+} else {
+    path = "../output_small/part-00000-afced7c2-0763-44b5-bba7-e048487cda6a-c000.csv"
+}
 
 // $.get("../jquery-csv/examples/data/sine.csv", function (csv) {
 var csv = $.ajax({
     type: "GET",
-    url: "../output_small/part-00000-afced7c2-0763-44b5-bba7-e048487cda6a-c000.csv",
-    // url: "../output/part-00000-31490ed3-6fa5-4385-b929-a164606dcfad-c000.csv",
+    url: path,
     async: false
 });
 
