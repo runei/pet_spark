@@ -3,6 +3,12 @@ using System.Net.NetworkInformation;
 using Microsoft.Spark.Sql;
 using Microsoft.Spark.Sql.Expressions;
 
+var path = "";
+using (var sr = new StreamReader("config.txt"))
+{
+    path = sr.ReadLine();
+}
+
 SparkSession Spark = SparkSession
                            .Builder()
                            .GetOrCreate();
@@ -10,7 +16,8 @@ SparkSession Spark = SparkSession
 DataFrame df = Spark
     .Read()
     .Option("inferSchema", true)
-    .Csv("BTCUSDT.csv");
+    .Csv(path);
+// .Csv("BTCUSDT.csv");
 df = df.Drop("_c1", "_c2", "_c3", "", "_c6", "_c7", "_c8", "_c9", "_c10", "_c11");
 // df = df.ToDF("time", "open", "high", "low", "close", "volume");
 df = df.ToDF("time", "close", "volume");
@@ -49,4 +56,4 @@ df = df.WithColumn("fib_786", Functions.Lit(fib_786));
 // df.PrintSchema();
 // df.Show();
 
-df.Write().Csv("output");
+df.Write().Csv("output_small");

@@ -40,10 +40,12 @@ const FIB_5 = 11;
 const FIB_618 = 12;
 const FIB_786 = 13;
 
+
 // $.get("../jquery-csv/examples/data/sine.csv", function (csv) {
 var csv = $.ajax({
     type: "GET",
-    url: "../output/part-00000-31490ed3-6fa5-4385-b929-a164606dcfad-c000.csv",
+    url: "../output_small/part-00000-afced7c2-0763-44b5-bba7-e048487cda6a-c000.csv",
+    // url: "../output/part-00000-31490ed3-6fa5-4385-b929-a164606dcfad-c000.csv",
     async: false
 });
 
