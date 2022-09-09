@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "mBMbXCJn7WwG405NmSGdBcDOXCJufXhymIf6zk2pSKR9FrPhZV3S9kU8xQetryjROAIRKx+8Vq4CM2UFc/XjgA==",
+  "success": true,
+  "projectFilePath": "/home/leonardo/Documents/pet_spark/StockAnalyzer/StockAnalyzer.csproj",
+  "expectedPackageFiles": [
+    "/home/leonardo/.nuget/packages/apache.arrow/0.15.1/apache.arrow.0.15.1.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/microsoft.data.analysis/0.4.0/microsoft.data.analysis.0.4.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/microsoft.ml.dataview/1.0.0/microsoft.ml.dataview.1.0.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/microsoft.spark/1.0.0/microsoft.spark.1.0.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/razorvine.pyrolite/4.26.0/razorvine.pyrolite.4.26.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/razorvine.serpent/1.29.0/razorvine.serpent.1.29.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/system.memory/4.5.2/system.memory.4.5.2.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
+    "/home/leonardo/.nuget/packages/system.threading.tasks.extensions/4.5.2/system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}
